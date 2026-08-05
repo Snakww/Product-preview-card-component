@@ -1,0 +1,115 @@
+:root{
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    width: 880px;
+    height: 780px;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.image-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.2rem;
+    width: 50%;
+}
+.content h1{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+}
+.category{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: var(--grey);
+    text-transform: uppercase;
+}
+
+.description{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--grey);
+}
+.price .current-price{
+    color: var(--green-500);
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    font-family: "Fraunces", serif;
+}
+.price .old-price{
+    color: var(--grey);
+    font-size: 2rem;
+    text-decoration: line-through;
+    display: flex;
+    flex-direction: row;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green-500);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.attribution{
+    display: block;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+}
