@@ -94,8 +94,9 @@ body{
 }
 .price button{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     background-color: var(--green-500);
     color: var(--white);
     border: none;
@@ -105,6 +106,10 @@ body{
     font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
+}
+.price button img{
+    width: 16px;
+    height: 16px;
 }
 
 .attribution{
