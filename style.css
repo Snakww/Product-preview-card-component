@@ -78,6 +78,7 @@ body{
     display: flex;
     flex-direction: row;
     font-family: "Fraunces", serif;
+    padding: 0px 20px 0px 0px;
 }
 .price .old-price{
     color: var(--grey);
@@ -90,6 +91,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 1.70rem 0rem 0rem 0rem;
 }
 .prices{
     display: flex;
@@ -106,8 +108,8 @@ body{
     border: none;
     width: 100%;
     height: auto;
-    padding: 2.5rem;
-    border-radius: 8px;
+    padding: 1.70rem;
+    border-radius: 1rem;
     font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
