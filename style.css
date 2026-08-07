@@ -1,13 +1,19 @@
-:root{
-  --green-500: hsl(158, 36%, 37%);
-  --green-700: hsl(158, 42%, 18%);
-  --black: hsl(212, 21%, 14%);
-  --grey: hsl(228, 12%, 48%);
-  --cream: hsl(30, 38%, 92%);
-  --white: hsl(0, 0%, 100%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
     background-color: var(--cream);
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
@@ -17,61 +23,68 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
+
 
 }
-.container{
+
+.container {
     width: 980px;
     min-height: 560px;
     background-color: var(--white);
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-   
+
 }
-.image-container{
+
+.image-container {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.image-container img{
+
+.image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3rem 2rem;
     gap: 1.2rem;
     width: 50%;
-    
+
 }
-.content h1{
+
+.content h1 {
     font-size: 4rem;
     line-height: 1;
     font-weight: 700;
     font-family: "Fraunces", serif;
 }
-.category{
+
+.category {
     font-size: 1.5rem;
     letter-spacing: 5px;
     color: var(--grey);
     text-transform: uppercase;
     padding-top: 20px;
-    
+
 }
 
-.description{
+.description {
     font-size: 1.28rem;
     line-height: 1.6;
     color: var(--grey);
 }
-.price .current-price{
+
+.price .current-price {
     color: var(--green-500);
     font-size: 4rem;
     font-weight: 700;
@@ -80,25 +93,29 @@ body{
     font-family: "Fraunces", serif;
     padding: 0px 20px 0px 0px;
 }
-.price .old-price{
+
+.price .old-price {
     color: var(--grey);
     font-size: 1.2rem;
     text-decoration: line-through;
     display: flex;
     flex-direction: row;
 }
-.price{
+
+.price {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.70rem 0rem 0rem 0rem;
 }
-.prices{
+
+.prices {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.price button{
+
+.price button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,14 +131,86 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
-.price button img{
+
+.price button img {
     width: 1.25rem;
     height: 1.25rem;
 }
 
-.attribution{
+.attribution {
     display: block;
     font-size: 0.75rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .content {
+        flex: 1;
+        width: auto;
+        height: 50%;
+        padding: 1.5rem;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    .category {
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+        padding-top: 0;
+    }
+
+    .content h1 {
+        font-size: 0.90rem;
+        line-height: 1;
+    }
+
+    .prices {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        white-space: nowrap;
+    }
+     .price .current-price{
+        font-size: 2.5rem; /* ou até 2.2rem */
+    }
+
+    .price .old-price{
+        font-size: 0.9rem;
+    }
+
+    .price button {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 220px;
+        background-image: url("./images/perfume-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image-container img {
+        display: none;
+    }
+
+    body {
+        background-color: var(--cream);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 1rem;
+    }
+
 }
